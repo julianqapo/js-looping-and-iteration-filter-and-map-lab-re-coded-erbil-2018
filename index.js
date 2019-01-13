@@ -40,7 +40,7 @@ function exactMatchToList(obj,sv){
   let searchKey = Object.keys(sv)[0]
   let searchVal = sv[searchKey]
   let ret = obj.filter((v) => { if (v[searchKey] == searchVal){
-  return  arr.push(v[name])
+  return  arr.push(v["name"])
   }
   })
   return arr
