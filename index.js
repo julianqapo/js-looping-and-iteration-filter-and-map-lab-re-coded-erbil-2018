@@ -27,21 +27,21 @@ return z
 }
 */
 
-function exactMatch(obj,sv){ 
-  let searchKey = Object.keys(sv)[0] 
-  let searchVal = sv[searchKey] 
-  let ret = obj.filter((v) => { return v[searchKey] == searchVal 
-  }) 
-  return ret 
+function exactMatch(obj,sv){
+  let searchKey = Object.keys(sv)[0]
+  let searchVal = sv[searchKey]
+  let ret = obj.filter((v) => { return v[searchKey] == searchVal
+  })
+  return ret
 }
 
 function exactMatchToList(obj,sv){
   let arr = []
-  let searchKey = Object.keys(sv)[0] 
-  let searchVal = sv[searchKey] 
+  let searchKey = Object.keys(sv)[0]
+  let searchVal = sv[searchKey]
   let ret = obj.filter((v) => { if (v[searchKey] == searchVal){
-  return  arr.push(v[searchKey])
-  } 
-  }) 
-  return arr 
+  return  arr.push(v[name])
+  }
+  })
+  return arr
 }
